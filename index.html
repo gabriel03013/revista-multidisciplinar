@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" style="--page-scale: 1;"><head>
+<html lang="pt-BR" style=""><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#8E1B2E">
@@ -1355,6 +1355,33 @@ body:has(dialog[open]){overflow:hidden}
 .magazine-page:not(#pagina-28) [style*="color: #8E1B2E"],.magazine-page:not(#pagina-28) [style*="color:#8E1B2E"]{color:var(--action)!important}
 .magazine-page:not(#pagina-28) [style*="--button-accent: rgb(142, 27, 46)"]{--button-accent:var(--action)!important}
 
+</style><style type="text/css" id="final-layout-refinements">/* Native caption shapes, interview artwork and consistent pagination. */
+.portrait-credit{transform:none;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%);padding:28px 60px;box-shadow:none}
+#pagina-08 .sheet{background:#411d53!important;isolation:isolate}
+#pagina-08 .sheet::before,#pagina-08 .sheet::after{content:"";position:absolute;inset:0;background:#5a2a73;pointer-events:none;z-index:-1}
+#pagina-08 .sheet::before{clip-path:polygon(69.62% 0,100% 0,100% 28.3%,46.56% 60.47%,80.49% 10.47%)}
+#pagina-08 .sheet::after{clip-path:polygon(0 41.47%,9.53% 80.04%,41.69% 68.60%,11.97% 93.22%,19.73% 100%,0 100%)}
+.sheet nav[data-name="Navegação entre páginas"]{left:664px!important;width:112px!important;height:48px!important}
+.sheet nav .round-button{width:48px;height:48px;min-width:48px;min-height:48px;top:0}
+.sheet nav .round-button:first-child{left:0}.sheet nav .round-button:last-child{left:64px}
+.sheet nav button:not(.round-button){width:48px!important;height:48px!important}
+.sheet nav button:not(.round-button):first-child{left:0!important}.sheet nav button:not(.round-button):last-child{left:64px!important}
+.sheet nav button:not(.round-button)>div{left:0!important;top:0!important;width:48px!important;height:48px!important}
+@media(max-width:1099px){
+ .reading-nav{display:grid!important;grid-template-columns:minmax(0,1fr) 48px 48px minmax(0,1fr);column-gap:12px;align-items:center;margin-top:56px!important;padding-top:28px!important}
+ .reading-nav .reading-index{display:none!important}
+ .reading-nav button:nth-of-type(1){grid-column:2;grid-row:1}
+ .reading-nav button:nth-of-type(2){grid-column:3;grid-row:1}
+ .reading-nav .reading-folio{grid-column:4;grid-row:1;justify-self:end;width:44px;height:44px;font-size:30px}
+ .reading-nav button,.reading-nav .round-button{width:48px!important;height:48px!important;min-width:48px;min-height:48px;flex-basis:48px}
+ .reading-nav button:not(.round-button) img{width:48px;height:48px}
+ .cover-page .sheet nav .round-button{width:48px;height:48px;min-width:48px;min-height:48px}
+ .cover-page .sheet nav .round-button:last-child{left:64px}
+ #pagina-08 .reading-layout{background:#411d53!important;position:relative;isolation:isolate}
+ #pagina-08 .reading-layout::before,#pagina-08 .reading-layout::after{content:"";position:absolute;inset:0;background:#5a2a73;pointer-events:none;z-index:-1}
+ #pagina-08 .reading-layout::before{clip-path:polygon(69.62% 0,100% 0,100% 28.3%,46.56% 60.47%,80.49% 10.47%)}
+ #pagina-08 .reading-layout::after{clip-path:polygon(0 41.47%,9.53% 80.04%,41.69% 68.60%,11.97% 93.22%,19.73% 100%,0 100%)}
+}
 </style></head>
   <body>
     <a class="skip-link" href="#pagina-04">Ir para o sumário</a>
@@ -1520,7 +1547,7 @@ body:has(dialog[open]){overflow:hidden}
                   "></div>
               </div>
             </div>
-            <nav data-node-id="476:2249" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="476:2249" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; height: 44px; left: 670px; top: 946px; width: 100px;">
               <button data-node-id="479:286" data-name="Página anterior" type="button" aria-label="Página anterior" disabled="" style="
                   position: absolute;
                   left: 0;
@@ -1541,8 +1568,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-02" class="magazine-page" aria-label="02 — Editorial" data-page-index="1">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:14" data-name="02 — Editorial" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1030;">
+          <div data-node-id="404:14" data-name="02 — Editorial" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1030px;">
             <h2 data-node-id="404:15" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -1627,7 +1654,7 @@ body:has(dialog[open]){overflow:hidden}
                 width: 454px;
               "></div>
             <p data-node-id="404:25" style="overflow-wrap:break-word;position:absolute;font-family:&quot;Bebas Neue&quot;;line-height:100px;left:906px;font-style:normal;font-size:96px;color:var(--wine, #8E1B2E);top:752px;width:356px">80,7%</p>
-            <div data-node-id="404:26" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:26" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 956px; width: 1280px;">
               <div data-node-id="I404:26;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -1654,7 +1681,7 @@ body:has(dialog[open]){overflow:hidden}
               </p>
             </div>
             
-            <nav data-node-id="479:295" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:295" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 952px; width: 100px;">
               <button data-node-id="479:296" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-01" style="
                   position: absolute;
                   display: block;
@@ -1680,11 +1707,11 @@ body:has(dialog[open]){overflow:hidden}
           </nav></div>
       </section>
       <section id="pagina-03" class="magazine-page" aria-label="03 — Editorial — continuação" data-page-index="2">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:27" data-name="03 — Editorial — continuação" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1042;">
+          <div data-node-id="404:27" data-name="03 — Editorial — continuação" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1042px;">
             
             
-            <div data-node-id="404:35" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:35" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 968px; width: 1280px;">
               <div data-node-id="I404:35;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -1744,7 +1771,7 @@ body:has(dialog[open]){overflow:hidden}
               ">
               <a href="https://iclnoticias.com.br/manifestantes-ruas-protestar-contra-feminicidio/" target="_blank" rel="noopener noreferrer" class="source-link">Tânia Rêgo/Agência Brasil; reprodução ICL Notícias</a>
             </p>
-            <nav data-node-id="479:306" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:306" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 964px; width: 100px;">
               <button data-node-id="479:307" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-02" style="
                   position: absolute;
                   display: block;
@@ -2052,7 +2079,7 @@ body:has(dialog[open]){overflow:hidden}
                   " data-media="media/1f353015f36107bf.svg">
               </div>
             </div>
-            <nav data-node-id="479:317" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:317" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 946px; width: 100px;">
               <button data-node-id="479:318" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-03" style="
                   position: absolute;
                   display: block;
@@ -2502,8 +2529,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-05" class="magazine-page" aria-label="05 — Introdução" data-page-index="4">
-        <div class="page-canvas" style="aspect-ratio: 1440 / 1088;">
-          <div data-node-id="404:78" data-name="05 — Introdução" class="sheet" style="background-color: rgb(253, 245, 238); position: relative; width: 1440px; height: 1088px;">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1130;">
+          <div data-node-id="404:78" data-name="05 — Introdução" class="sheet" style="background-color: rgb(253, 245, 238); position: relative; width: 1440px; height: 1130px;">
             <h2 data-node-id="404:79" class="spread-title intro-quote" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -2537,7 +2564,7 @@ body:has(dialog[open]){overflow:hidden}
                   height: 100%;
                 " data-media="media/7a9c1d0f82458db8.webp">
             </div>
-            <div data-node-id="404:87" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1014px; width: 1280px;">
+            <div data-node-id="404:87" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1056px; width: 1280px;">
               <div data-node-id="I404:87;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -2651,7 +2678,7 @@ body:has(dialog[open]){overflow:hidden}
               defesa dos direitos humanos. Sua luta ajudou a expor a falta de
               proteção às mulheres vítimas de violência doméstica.
             </p>
-            <nav data-node-id="479:328" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1014px; width: 100px;">
+            <nav data-node-id="479:328" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1052px; width: 100px;">
               <button data-node-id="479:329" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-04" style="
                   position: absolute;
                   display: block;
@@ -2795,7 +2822,7 @@ body:has(dialog[open]){overflow:hidden}
             
             
             
-            <nav data-node-id="479:339" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1014px; width: 100px;">
+            <nav data-node-id="479:339" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1010px; width: 100px;">
               <button data-node-id="479:340" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-05" style="
                   position: absolute;
                   display: block;
@@ -2821,9 +2848,9 @@ body:has(dialog[open]){overflow:hidden}
           </nav></div>
       </section>
       <section id="pagina-07" class="magazine-page" aria-label="07 — Fontes — limites" data-page-index="6">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:131" data-name="07 — Fontes — limites" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
-            <div data-node-id="404:132" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1075;">
+          <div data-node-id="404:131" data-name="07 — Fontes — limites" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1075px;">
+            <div data-node-id="404:132" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1001px; width: 1280px;">
               <div data-node-id="I404:132;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--purple, #5B2A6E);
@@ -3019,7 +3046,7 @@ body:has(dialog[open]){overflow:hidden}
               <a href="https://www.andes.org.br/conteudos/noticia/camara-aprova-proposta-que-institui-pensao-especial-para-filha-e-filho-das-vitimas-de-feminicidio1" target="_blank" rel="noopener noreferrer" class="source-link">Reprodução ANDES-SN; autoria não informada na página
                 consultada</a>
             </p>
-            <nav data-node-id="479:350" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:350" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 997px; width: 100px;">
               <button data-node-id="479:351" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-06" style="
                   position: absolute;
                   display: block;
@@ -3152,7 +3179,7 @@ body:has(dialog[open]){overflow:hidden}
                 ">
                 08
               </p>
-            </div><nav data-node-id="538:1514" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1580px; width: 100px; opacity: 1;">
+            </div><nav data-node-id="538:1514" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1576px; width: 100px; opacity: 1;">
               <button data-node-id="538:1515" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-07" style="
                   position: absolute;
                   display: block;
@@ -3175,8 +3202,8 @@ body:has(dialog[open]){overflow:hidden}
           </nav></div>
       </section>
       <section id="pagina-09" class="magazine-page" aria-label="09 — Análises descritivas" data-page-index="8">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:141" data-name="09 — Análises descritivas" class="sheet" style="background-color:#FDF5EE;position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1097;">
+          <div data-node-id="404:141" data-name="09 — Análises descritivas" class="sheet" style="background-color: rgb(253, 245, 238); position: relative; width: 1440px; height: 1097px;">
             <h2 data-node-id="404:142" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -3229,7 +3256,7 @@ body:has(dialog[open]){overflow:hidden}
               ">
               Fonte: FBSP, Retrato dos Feminicídios no Brasil, 2026.
             </p>
-            <div data-node-id="404:145" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:145" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1023px; width: 1280px;">
               <div data-node-id="I404:145;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -3303,7 +3330,7 @@ body:has(dialog[open]){overflow:hidden}
             </p>
             <p data-node-id="404:156" style="overflow-wrap:break-word;position:absolute;font-family:&quot;Open Sans&quot;;font-weight:400;line-height:27px;left:932px;font-size:21px;color:var(--ink, #1d1d1d);top:620px;letter-spacing:1.1px;width:409px;font-variation-settings:&quot;wdth&quot; 100">Os registros do FBSP passam de 449 casos em 2015 para 1.568 em 2025. Parte do salto inicial acompanha a implantação da classificação. Entre 2016 e 2025, o aumento no número de casos é de 68,8%; de 2024 para 2025, de 5,09% (cálculos da equipe). A única queda anual ocorre de 2020 para 2021. A variação das taxas em 2024–2025 é de 4,7%, segundo o Quadro 1: trata-se de outro indicador. Os números não explicam sozinhos suas causas.</p>
             <div class="live-widget live-analysis live-desktop" data-live-widget="analysis"><div class="live-tabs" role="tablist" aria-label="Gráficos da pesquisa"><button type="button" role="tab" id="desktop-analysis-tab-0" aria-controls="desktop-analysis-panel-0" aria-selected="true" tabindex="0" data-live-tab="0">Evolução</button><button type="button" role="tab" id="desktop-analysis-tab-1" aria-controls="desktop-analysis-panel-1" aria-selected="false" tabindex="-1" data-live-tab="1">Perfil</button></div><section class="live-panel is-export-default" role="tabpanel" id="desktop-analysis-panel-0" aria-labelledby="desktop-analysis-tab-0"><div class="live-panel-content"><button class="live-graph" type="button" data-open="figura-415-853" aria-label="Ampliar série histórica" aria-haspopup="dialog"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 808 436" role="img" aria-label="Série histórica: vítimas de feminicídio no Brasil, 2015 a 2025"><title>Série histórica: vítimas de feminicídio. Brasil, 2015–2025.</title><rect width="808" height="436" fill="white"></rect><text x="22" y="37" fill="#eb865e" font-size="30" font-weight="700">Gráfico 1</text><text x="22" y="66" font-size="23">Série histórica: vítimas de feminicídio</text><text x="22" y="91" font-size="18" font-style="italic">Brasil, 2015–2025</text><path d="M64 352H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="357" text-anchor="end" font-size="14">0</text><path d="M64 323.1111111111111H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="328.1111111111111" text-anchor="end" font-size="14">200</text><path d="M64 294.22222222222223H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="299.22222222222223" text-anchor="end" font-size="14">400</text><path d="M64 265.33333333333337H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="270.33333333333337" text-anchor="end" font-size="14">600</text><path d="M64 236.44444444444446H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="241.44444444444446" text-anchor="end" font-size="14">800</text><path d="M64 207.55555555555554H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="212.55555555555554" text-anchor="end" font-size="14">1.000</text><path d="M64 178.66666666666669H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="183.66666666666669" text-anchor="end" font-size="14">1.200</text><path d="M64 149.77777777777777H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="154.77777777777777" text-anchor="end" font-size="14">1.400</text><path d="M64 120.88888888888891H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="125.88888888888891" text-anchor="end" font-size="14">1.600</text><path d="M64 92H754" stroke="#ddd" stroke-dasharray="2 3"></path><text x="54" y="97" text-anchor="end" font-size="14">1.800</text><polyline points="64,287.14444444444445 133,217.81111111111113 202,196.72222222222223 271,174.47777777777776 340,159.88888888888889 409,156.42222222222222 478,157.43333333333334 547,141.83333333333334 616,138.94444444444446 685,136.48888888888888 754,125.51111111111112" fill="none" stroke="#ee845c" stroke-width="3"></polyline><text x="64" y="275.14444444444445" text-anchor="middle" font-size="15">449</text><text x="64" y="380" text-anchor="middle" font-size="15">2015</text><text x="133" y="205.81111111111113" text-anchor="middle" font-size="15">929</text><text x="133" y="380" text-anchor="middle" font-size="15">2016</text><text x="202" y="184.72222222222223" text-anchor="middle" font-size="15">1.075</text><text x="202" y="380" text-anchor="middle" font-size="15">2017</text><text x="271" y="162.47777777777776" text-anchor="middle" font-size="15">1.229</text><text x="271" y="380" text-anchor="middle" font-size="15">2018</text><text x="340" y="147.88888888888889" text-anchor="middle" font-size="15">1.330</text><text x="340" y="380" text-anchor="middle" font-size="15">2019</text><text x="409" y="144.42222222222222" text-anchor="middle" font-size="15">1.354</text><text x="409" y="380" text-anchor="middle" font-size="15">2020</text><text x="478" y="145.43333333333334" text-anchor="middle" font-size="15">1.347</text><text x="478" y="380" text-anchor="middle" font-size="15">2021</text><text x="547" y="129.83333333333334" text-anchor="middle" font-size="15">1.455</text><text x="547" y="380" text-anchor="middle" font-size="15">2022</text><text x="616" y="126.94444444444446" text-anchor="middle" font-size="15">1.475</text><text x="616" y="380" text-anchor="middle" font-size="15">2023</text><text x="685" y="124.48888888888888" text-anchor="middle" font-size="15">1.492</text><text x="685" y="380" text-anchor="middle" font-size="15">2024</text><text x="754" y="113.51111111111112" text-anchor="middle" font-size="15">1.568</text><text x="754" y="380" text-anchor="middle" font-size="15">2025</text><path d="M64 352H754" stroke="#888"></path><path d="M350 412h32" stroke="#ee845c" stroke-width="3"></path><text x="390" y="418" font-size="15">Feminicídios</text></svg></button></div></section><section class="live-panel" role="tabpanel" id="desktop-analysis-panel-1" aria-labelledby="desktop-analysis-tab-1" hidden=""><div class="live-panel-content"><button class="live-graph" type="button" data-open="figura-469-241" aria-label="Ampliar perfil das vítimas" aria-haspopup="dialog"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 459" role="img" aria-label="Raça e cor das vítimas: 62,6% negras, 36,8% brancas, 0,3% amarelas e 0,3% indígenas"><title>Raça/cor das vítimas de feminicídio. Brasil, 2021–2024.</title><rect width="480" height="459" fill="white"></rect><text x="22" y="38" font-size="29" font-weight="700" fill="#eb865e">Gráfico 4</text><text x="22" y="67" font-size="21">Raça/cor das vítimas de feminicídio</text><text x="22" y="94" font-size="18" font-style="italic">Brasil, 2021–2024</text><circle cx="165" cy="250" r="91" fill="none" stroke="#203638" stroke-width="52" pathLength="100" stroke-dasharray="0.3 99.7" stroke-dashoffset="0" transform="rotate(-90 165 250)"></circle><circle cx="165" cy="250" r="91" fill="none" stroke="#ed845b" stroke-width="52" pathLength="100" stroke-dasharray="36.8 63.2" stroke-dashoffset="-0.3" transform="rotate(-90 165 250)"></circle><circle cx="165" cy="250" r="91" fill="none" stroke="#d71722" stroke-width="52" pathLength="100" stroke-dasharray="0.3 99.7" stroke-dashoffset="-37.099999999999994" transform="rotate(-90 165 250)"></circle><circle cx="165" cy="250" r="91" fill="none" stroke="#d4becb" stroke-width="52" pathLength="100" stroke-dasharray="62.6 37.4" stroke-dashoffset="-37.39999999999999" transform="rotate(-90 165 250)"></circle><text x="170" y="124" font-size="17" text-anchor="middle">0,3%</text><text x="222" y="224" font-size="17">36,8%</text><text x="63" y="286" font-size="17">62,6%</text><text x="245" y="357" font-size="17">0,3%</text><circle cx="326" cy="204" r="8" fill="#203638"></circle><text x="343" y="210" font-size="17">Amarela</text><circle cx="326" cy="238" r="8" fill="#ed845b"></circle><text x="343" y="244" font-size="17">Branca</text><circle cx="326" cy="272" r="8" fill="#d71722"></circle><text x="343" y="278" font-size="17">Indígena</text><circle cx="326" cy="306" r="8" fill="#d4becb"></circle><text x="343" y="312" font-size="17">Negra</text><text x="22" y="405" font-size="12">Fonte: análise dos microdados dos registros policiais.</text><text x="22" y="423" font-size="12">Fórum Brasileiro de Segurança Pública, 2026.</text></svg></button></div></section></div>
-            <nav data-node-id="479:361" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:361" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1019px; width: 100px;">
               <button data-node-id="479:362" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-08" style="
                   position: absolute;
                   display: block;
@@ -3380,9 +3407,9 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-10" class="magazine-page" aria-label="10 — Perfil das vítimas" data-page-index="9">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:157" data-name="09 — Perfil das vítimas" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
-            <div data-node-id="404:158" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1063;">
+          <div data-node-id="404:157" data-name="09 — Perfil das vítimas" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1063px;">
+            <div data-node-id="404:158" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 989px; width: 1280px;">
               <div data-node-id="I404:158;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--purple, #5B2A6E);
@@ -3474,7 +3501,7 @@ body:has(dialog[open]){overflow:hidden}
             <p data-node-id="437:2043" style="overflow-wrap:break-word;position:absolute;font-family:&quot;Open Sans&quot;;font-weight:400;line-height:24px;left:726px;font-size:16px;color:var(--purple, #5B2A6E);top:624px;width:634px;font-variation-settings:&quot;wdth&quot; 100">
               <a href="https://hojemaringa.com.br/noticias/mobilizacao-reforca-o-combate-ao-feminicidio-em-maringa/" target="_blank" rel="noopener noreferrer" class="source-link">Rafael Macri/PMM; reprodução Hoje Maringá</a>
             </p>
-            <nav data-node-id="479:372" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:372" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 985px; width: 100px;">
               <button data-node-id="479:373" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-09" style="
                   position: absolute;
                   display: block;
@@ -3543,8 +3570,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-11" class="magazine-page" aria-label="11 — Objetivo estatístico" data-page-index="10">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:167" data-name="10 — Objetivo estatístico" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1046;">
+          <div data-node-id="404:167" data-name="10 — Objetivo estatístico" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1046px;">
             <h2 data-node-id="404:168" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -3597,7 +3624,7 @@ body:has(dialog[open]){overflow:hidden}
               ">
               AUTORIA E VÍNCULO
             </p>
-            <div data-node-id="404:172" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:172" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 972px; width: 1280px;">
               <div data-node-id="I404:172;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -3708,7 +3735,7 @@ body:has(dialog[open]){overflow:hidden}
               ">
               Foto: Tita Barros/Reuters
             </p>
-            <nav data-node-id="479:383" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:383" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 968px; width: 100px;">
               <button data-node-id="479:384" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-10" style="
                   position: absolute;
                   display: block;
@@ -3797,12 +3824,12 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-12" class="magazine-page" aria-label="12 — Objetivo — leitura crítica" data-page-index="11">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:178" data-name="11 — Objetivo — leitura crítica" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1058;">
+          <div data-node-id="404:178" data-name="11 — Objetivo — leitura crítica" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1058px;">
             
             
             
-            <div data-node-id="404:183" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:183" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 984px; width: 1280px;">
               <div data-node-id="I404:183;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--purple, #5B2A6E);
@@ -3833,7 +3860,7 @@ body:has(dialog[open]){overflow:hidden}
             
             
             
-            <nav data-node-id="479:394" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:394" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 980px; width: 100px;">
               <button data-node-id="479:395" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-11" style="
                   position: absolute;
                   display: block;
@@ -3977,8 +4004,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-13" class="magazine-page" aria-label="13 — Teoria sociológica" data-page-index="12">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:189" data-name="12 — Teoria sociológica" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1056;">
+          <div data-node-id="404:189" data-name="12 — Teoria sociológica" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1056px;">
             <h2 data-node-id="404:190" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -4012,7 +4039,7 @@ body:has(dialog[open]){overflow:hidden}
               atuação do Estado.
             </p>
             <div class="live-widget live-theory live-desktop" data-live-widget="theory"><div class="live-tabs" role="tablist" aria-label="Perspectivas sociológicas"><button type="button" role="tab" id="desktop-theory-tab-0" aria-controls="desktop-theory-panel-0" aria-selected="true" tabindex="0" data-live-tab="0">Russell</button><button type="button" role="tab" id="desktop-theory-tab-1" aria-controls="desktop-theory-panel-1" aria-selected="false" tabindex="-1" data-live-tab="1">Lagarde</button><button type="button" role="tab" id="desktop-theory-tab-2" aria-controls="desktop-theory-panel-2" aria-selected="false" tabindex="-1" data-live-tab="2">Saffioti</button></div><section class="live-panel is-export-default" role="tabpanel" id="desktop-theory-panel-0" aria-labelledby="desktop-theory-tab-0"><div class="live-panel-content"><div class="live-theory-content"><figure><img alt="Retrato de Diana Russell · acervo de referências da equipe" data-media="media/5071c105baeae55d.webp"><figcaption>Retrato de Diana Russell · acervo de referências da equipe</figcaption></figure><div><h3>Diana Russell</h3><p>Diana Russell empregou o termo femicide para tornar visível o assassinato de mulheres por razões de gênero. Sua contribuição distingue essa violência de uma descrição que considera apenas o sexo da vítima.</p><p>Com Jill Radford, organizou em 1992 uma coletânea central para o debate. A perspectiva relaciona os crimes às desigualdades de poder e amplia sua compreensão para além de episódios tratados como isolados.</p><p class="live-concept"><strong>Conceito-chave:</strong> Femicídio: o assassinato de mulheres por homens motivado pelo fato de serem mulheres.</p><p class="live-theory-reference">Referências: Russell (2011); Radford e Russell (1992).</p><a class="live-reference" href="https://www.dianarussell.com/origin_of_femicide.html" target="_blank" rel="noopener noreferrer">Ler referência <span aria-hidden="true">↗</span></a></div></div></div></section><section class="live-panel" role="tabpanel" id="desktop-theory-panel-1" aria-labelledby="desktop-theory-tab-1" hidden=""><div class="live-panel-content"><div class="live-theory-content"><figure><img alt="Retrato de Marcela Lagarde · W Radio" data-media="media/471c6d82f2337d3b.webp"><figcaption>Retrato de Marcela Lagarde · W Radio</figcaption></figure><div><h3>Marcela Lagarde</h3><p>Marcela Lagarde relaciona o feminicídio à impunidade e à violência institucional. A discussão amplia o foco do crime individual para as condições sociais e estatais que permitem sua continuidade.</p><p>Como deputada no México, impulsionou a Lei Geral de Acesso das Mulheres a uma Vida Livre de Violência, de 2007. Sua leitura destaca a responsabilidade pública diante de mortes evitáveis.</p><p class="live-concept"><strong>Conceito-chave:</strong> Violência feminicida: a impunidade e a omissão institucional também colocam em questão a responsabilidade do Estado.</p><p class="live-theory-reference">Referências: Lagarde, Del femicidio al feminicidio (2006); UNAM (2023).</p><a class="live-reference" href="https://repositorio.ciem.ucr.ac.cr/items/a0bae345-91ec-40e4-96a4-855ec4dcb861" target="_blank" rel="noopener noreferrer">Ler referência <span aria-hidden="true">↗</span></a></div></div></div></section><section class="live-panel" role="tabpanel" id="desktop-theory-panel-2" aria-labelledby="desktop-theory-tab-2" hidden=""><div class="live-panel-content"><div class="live-theory-content"><figure><img alt="Retrato de Heleieth Saffioti · Marxismo21 / reprodução Unicamp" data-media="media/44364a265a2ee979.webp"><figcaption>Retrato de Heleieth Saffioti · Marxismo21 / reprodução Unicamp</figcaption></figure><div><h3>Heleieth Saffioti</h3><p>Heleieth Saffioti interpreta a violência de gênero a partir do patriarcado. O poder masculino é socialmente construído e se articula às desigualdades de classe e de raça.</p><p>A abordagem examina relações históricas de dominação. Ela ajuda a perguntar como a sociedade naturaliza o controle e restringe a autonomia das mulheres.</p><p class="live-concept"><strong>Conceito-chave:</strong> Ordem patriarcal de gênero: poder masculino sustentado por controle, medo e tolerância social, articulado a classe e raça.</p><p class="live-theory-reference">Referências: Saffioti, Gênero, patriarcado, violência (2015).</p><a class="live-reference" href="https://loja.editora.unb.br/sociologia/genero-patriarcado-violencia-1747/p" target="_blank" rel="noopener noreferrer">Ler referência <span aria-hidden="true">↗</span></a></div></div></div></section><div class="theory-cycles"><button class="round-button" data-live-cycle="-1" type="button" aria-label="Perspectiva anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><button class="round-button" data-live-cycle="1" type="button" aria-label="Próxima perspectiva"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div></div>
-            <div data-node-id="404:193" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:193" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 982px; width: 1280px;">
               <div data-node-id="I404:193;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -4038,7 +4065,7 @@ body:has(dialog[open]){overflow:hidden}
                 13
               </p>
             </div>
-            <nav data-node-id="479:405" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:405" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 978px; width: 100px;">
               <button data-node-id="479:406" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-12" style="
                   position: absolute;
                   display: block;
@@ -4147,7 +4174,7 @@ body:has(dialog[open]){overflow:hidden}
             
             
             
-            <nav data-node-id="479:416" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1010px; width: 100px;">
+            <nav data-node-id="479:416" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1006px; width: 100px;">
               <button data-node-id="479:417" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-13" style="
                   position: absolute;
                   display: block;
@@ -4427,7 +4454,7 @@ body:has(dialog[open]){overflow:hidden}
                 15
               </p>
             </div>
-            <nav data-node-id="479:427" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 990px; width: 100px;">
+            <nav data-node-id="479:427" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 986px; width: 100px;">
               <button data-node-id="479:428" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-14" style="
                   position: absolute;
                   display: block;
@@ -4634,7 +4661,7 @@ body:has(dialog[open]){overflow:hidden}
                   " data-media="media/ad97c8a0b9b519a6.svg">
               </div>
             </div>
-            <nav data-node-id="479:438" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1062px; width: 100px;">
+            <nav data-node-id="479:438" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1058px; width: 100px;">
               <button data-node-id="479:439" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-15" style="
                   position: absolute;
                   display: block;
@@ -4736,8 +4763,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-17" class="magazine-page" aria-label="17 — Causas econômicas" data-page-index="16">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:229" data-name="16 — Causas econômicas" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1061;">
+          <div data-node-id="404:229" data-name="16 — Causas econômicas" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1061px;">
             <div data-node-id="432:232" data-name="Faixa editorial — economia" style="
                 position: absolute;
                 background-color: var(--red, #8E1B2E);
@@ -4746,7 +4773,7 @@ body:has(dialog[open]){overflow:hidden}
                 top: 0;
                 width: 649px;
               "></div>
-            <div data-node-id="404:230" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:230" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 987px; width: 1280px;">
               <div data-node-id="I404:230;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -4877,7 +4904,7 @@ body:has(dialog[open]){overflow:hidden}
               ">
               Fotografia do acervo de referências da equipe
             </p>
-            <nav data-node-id="479:449" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:449" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 983px; width: 100px;">
               <button data-node-id="479:450" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-16" style="
                   position: absolute;
                   display: block;
@@ -4954,9 +4981,9 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-18" class="magazine-page" aria-label="18 — Causas sociais" data-page-index="17">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:240" data-name="17 — Causas sociais" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
-            <div data-node-id="404:241" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1028;">
+          <div data-node-id="404:240" data-name="17 — Causas sociais" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1028px;">
+            <div data-node-id="404:241" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 954px; width: 1280px;">
               <div data-node-id="I404:241;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--purple, #5B2A6E);
@@ -5197,8 +5224,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-19" class="magazine-page" aria-label="19 — Causas institucionais" data-page-index="18">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:251" data-name="18 — Causas institucionais" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1036;">
+          <div data-node-id="404:251" data-name="18 — Causas institucionais" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1036px;">
             <h2 data-node-id="404:252" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -5310,7 +5337,7 @@ body:has(dialog[open]){overflow:hidden}
                 width: 719px;
               "></div>
             <div data-node-id="474:283" data-name="Divisor do acompanhamento" style="position:absolute;background-color:var(--ink, #1d1d1d);height:1px;left:62px;top:612px;width:719px"></div>
-            <div data-node-id="404:257" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:257" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 962px; width: 1280px;">
               <div data-node-id="I404:257;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -5336,7 +5363,7 @@ body:has(dialog[open]){overflow:hidden}
                 19
               </p>
             </div>
-            <nav data-node-id="479:471" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:471" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 958px; width: 100px;">
               <button data-node-id="479:472" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-18" style="
                   position: absolute;
                   display: block;
@@ -5425,9 +5452,9 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-20" class="magazine-page" aria-label="20 — Consequências sociais" data-page-index="19">
-        <div class="page-canvas" style="aspect-ratio: 1440 / 1100;">
-          <div data-node-id="404:264" data-name="19 — Consequências sociais" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1100px;">
-            <div data-node-id="404:265" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1026px; width: 1280px;">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1160;">
+          <div data-node-id="404:264" data-name="19 — Consequências sociais" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1160px;">
+            <div data-node-id="404:265" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1086px; width: 1280px;">
               <div data-node-id="I404:265;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--purple, #5B2A6E);
@@ -5533,7 +5560,7 @@ body:has(dialog[open]){overflow:hidden}
             
             
             <a data-node-id="457:560" data-name="Botão / Continuar leitura" href="#pagina-25" style="position: absolute; display: flex; cursor: pointer; height: 64px; left: 80px; top: 880px; width: 608px; font: 18px / 24px &quot;Open Sans&quot;, sans-serif; padding: 8px 16px; border: 1px solid var(--purple); align-items: center; --button-accent: rgb(91, 42, 110);"><span>A proteção social precisa reconhecer as pessoas que ficam e suas necessidades de cuidado.</span></a>
-            <nav data-node-id="479:482" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1026px; width: 100px;">
+            <nav data-node-id="479:482" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1082px; width: 100px;">
               <button data-node-id="479:483" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-19" style="
                   position: absolute;
                   display: block;
@@ -5770,7 +5797,7 @@ body:has(dialog[open]){overflow:hidden}
             
             
             <a class="spacing-pension" data-node-id="457:567" data-name="Botão / Continuar leitura" href="#pagina-25" style="position: absolute; display: block; cursor: pointer; height: auto; left: 752px; top: 710px; width: 608px; --button-accent: rgb(142, 27, 46);"><p style="line-height:28px;font-size:21px">Reparar exige continuidade. A Lei 14.717/2023 prevê pensão especial para filhos e dependentes menores de 18 anos, órfãos por feminicídio, com renda familiar por pessoa de até ¼ do salário mínimo. O acesso depende de requerimento e dos critérios legais.</p></a>
-            <nav data-node-id="479:493" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1006px; width: 100px;">
+            <nav data-node-id="479:493" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1002px; width: 100px;">
               <button data-node-id="479:494" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-20" style="
                   position: absolute;
                   display: block;
@@ -5978,7 +6005,7 @@ body:has(dialog[open]){overflow:hidden}
               ">
               Fonte: pesquisa do grupo · síntese das relações estudadas.
             </p>
-            <nav data-node-id="479:504" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1062px; width: 100px;">
+            <nav data-node-id="479:504" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1058px; width: 100px;">
               <button data-node-id="479:505" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-21" style="
                   position: absolute;
                   display: block;
@@ -6227,7 +6254,7 @@ body:has(dialog[open]){overflow:hidden}
                 </div>
               </div></button>
             
-            <nav data-node-id="479:515" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1026px; width: 100px;">
+            <nav data-node-id="479:515" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1022px; width: 100px;">
               <button data-node-id="479:516" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-22" style="
                   position: absolute;
                   display: block;
@@ -6307,8 +6334,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-24" class="magazine-page" aria-label="24 — Políticas públicas" data-page-index="23">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:312" data-name="23 — Políticas públicas" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1028;">
+          <div data-node-id="404:312" data-name="23 — Políticas públicas" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1028px;">
             <h2 data-node-id="404:313" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -6381,7 +6408,7 @@ body:has(dialog[open]){overflow:hidden}
                       height: 100%;
                     " data-media="media/55c9b0d03a08cb13.svg">
                 </div></div></a>
-            <div data-node-id="404:325" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:325" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 954px; width: 1280px;">
               <div data-node-id="I404:325;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--purple, #5B2A6E);
@@ -6623,8 +6650,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-25" class="magazine-page" aria-label="25 — Políticas — acompanhamento" data-page-index="24">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:330" data-name="24 — Políticas — acompanhamento" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1052;">
+          <div data-node-id="404:330" data-name="24 — Políticas — acompanhamento" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1052px;">
             <h2 data-node-id="404:331" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -6697,7 +6724,7 @@ body:has(dialog[open]){overflow:hidden}
                       height: 100%;
                     " data-media="media/b43a07185f9baffb.svg">
                 </div></div></a>
-            <div data-node-id="404:343" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:343" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 978px; width: 1280px;">
               <div data-node-id="I404:343;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--red, #8E1B2E);
@@ -6819,7 +6846,7 @@ body:has(dialog[open]){overflow:hidden}
               Fotografia do acervo de referências da equipe
             </p>
             <div class="live-widget live-follow-up live-desktop" data-live-widget="follow-up"><div class="live-tabs" role="tablist" aria-label="Proteção em rede"><button type="button" role="tab" id="desktop-follow-up-tab-0" aria-controls="desktop-follow-up-panel-0" aria-selected="false" tabindex="-1" data-live-tab="0">Acolhimento</button><button type="button" role="tab" id="desktop-follow-up-tab-1" aria-controls="desktop-follow-up-panel-1" aria-selected="true" tabindex="0" data-live-tab="1">Articulação</button><button type="button" role="tab" id="desktop-follow-up-tab-2" aria-controls="desktop-follow-up-panel-2" aria-selected="false" tabindex="-1" data-live-tab="2">Fiscalização</button><button type="button" role="tab" id="desktop-follow-up-tab-3" aria-controls="desktop-follow-up-panel-3" aria-selected="false" tabindex="-1" data-live-tab="3">Autonomia</button></div><section class="live-panel" role="tabpanel" id="desktop-follow-up-panel-0" aria-labelledby="desktop-follow-up-tab-0" hidden=""><div class="live-panel-content"><h3>Escuta e orientação</h3><div class="live-columns"><p>A escuta deve respeitar o tempo da mulher e evitar julgamentos. A orientação precisa ser compreensível, para que ela conheça os próximos passos e os apoios disponíveis.</p><p>Também é necessário perguntar sobre ameaças, isolamento e dificuldade de acesso aos serviços. Esses elementos ajudam a planejar um acompanhamento coerente com cada realidade.</p></div></div></section><section class="live-panel is-export-default" role="tabpanel" id="desktop-follow-up-panel-1" aria-labelledby="desktop-follow-up-tab-1"><div class="live-panel-content"><h3>Uma rede conectada</h3><div class="live-columns"><p>Encaminhar exige acompanhar o resultado. A rede deve definir quem recebe cada demanda e confirmar se a mulher conseguiu acessar o atendimento indicado.</p><p>A troca de informações entre os serviços reduz desencontros. Responsáveis definidos e contato periódico ajudam a dar continuidade à proteção para além do primeiro encontro.</p></div></div></section><section class="live-panel" role="tabpanel" id="desktop-follow-up-panel-2" aria-labelledby="desktop-follow-up-tab-2" hidden=""><div class="live-panel-content"><h3>Acompanhar o risco</h3><div class="live-columns"><p>O risco pode mudar depois da medida protetiva. Novas ameaças, descumprimentos e aproximações indevidas exigem reavaliação e uma resposta coordenada.</p><p>Tecnologia e equipes de segurança precisam atuar juntas. Alertas só se convertem em proteção quando há fiscalização contínua e capacidade de resposta rápida.</p></div></div></section><section class="live-panel" role="tabpanel" id="desktop-follow-up-panel-3" aria-labelledby="desktop-follow-up-tab-3" hidden=""><div class="live-panel-content"><h3>Condições para recomeçar</h3><div class="live-columns"><p>O acompanhamento também precisa olhar para o cotidiano: renda, moradia, filhos e redes de apoio. Essas condições influenciam a possibilidade de reorganizar a vida.</p><p>Reconstruir a autonomia envolve respeitar decisões e manter apoio ao longo do tempo. O cuidado deve fortalecer escolhas, sem substituir a vontade da mulher.</p></div></div></section></div>
-            <nav data-node-id="479:537" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:537" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 974px; width: 100px;">
               <button data-node-id="479:538" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-24" style="
                   position: absolute;
                   display: block;
@@ -6911,9 +6938,9 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-26" class="magazine-page" aria-label="26 — Intervenções propostas" data-page-index="25">
-        <div class="page-canvas" style="aspect-ratio: 1440 / 1120;">
-          <div data-node-id="404:348" data-name="25 — Intervenções propostas" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1120px;">
-            <div data-node-id="404:349" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1046px; width: 1280px;">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1146;">
+          <div data-node-id="404:348" data-name="25 — Intervenções propostas" class="sheet" style="background-color: var(--cream, #FDF5EE); position: relative; width: 1440px; height: 1146px;">
+            <div data-node-id="404:349" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 1072px; width: 1280px;">
               <div data-node-id="I404:349;119:39" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--purple, #5B2A6E);
@@ -6977,7 +7004,7 @@ body:has(dialog[open]){overflow:hidden}
             
             
             
-            <nav data-node-id="479:548" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1046px; width: 100px;">
+            <nav data-node-id="479:548" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 1068px; width: 100px;">
               <button data-node-id="479:549" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-25" style="
                   position: absolute;
                   display: block;
@@ -7067,8 +7094,8 @@ body:has(dialog[open]){overflow:hidden}
         </div>
       </section>
       <section id="pagina-27" class="magazine-page" aria-label="27 — Conclusão geral" data-page-index="26">
-        <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:377" data-name="26 — Conclusão geral" class="sheet" style="background-color:var(--wine, #8E1B2E);position:relative;width:1440px;height:1024px">
+        <div class="page-canvas" style="aspect-ratio: 1440 / 1029;">
+          <div data-node-id="404:377" data-name="26 — Conclusão geral" class="sheet" style="background-color: var(--wine, #8E1B2E); position: relative; width: 1440px; height: 1029px;">
             <h2 data-node-id="404:378" class="spread-title" style="
                 overflow-wrap: break-word;
                 position: absolute;
@@ -7185,7 +7212,7 @@ body:has(dialog[open]){overflow:hidden}
                 Foto: Paulo Pinto/AGPT
               </p>
             </div>
-            <div data-node-id="404:390" data-name="Fólio" style="position:absolute;height:44px;left:80px;top:950px;width:1280px">
+            <div data-node-id="404:390" data-name="Fólio" style="position: absolute; height: 44px; left: 80px; top: 955px; width: 1280px;">
               <div data-node-id="I404:390;119:43" data-name="Page background" style="
                   position: absolute;
                   background-color: var(--cream, #FDF5EE);
@@ -7211,7 +7238,7 @@ body:has(dialog[open]){overflow:hidden}
                 27
               </p>
             </div>
-            <nav data-node-id="479:559" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:559" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 951px; width: 100px;">
               <button data-node-id="479:560" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-26" style="
                   position: absolute;
                   display: block;
@@ -7236,7 +7263,7 @@ body:has(dialog[open]){overflow:hidden}
       </section>
       <section id="pagina-28" class="magazine-page" aria-label="28 — Referências" data-page-index="27">
         <div class="page-canvas" style="aspect-ratio:1440/1024">
-          <div data-node-id="404:391" data-name="27 — Referências" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px"><div class="references-spread reference-sheet"><h2>Fontes e referências</h2><p class="reference-deck">Dados, legislação, discussão sociológica e entrevistas. Consulta em 24 de outubro de 2026.</p><div class="reference-columns-page"><section class="reference-group-page"><h3>Legislação e proteção</h3><ul class="reference-list-column"><li><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener noreferrer">BRASIL. Constituição Federal de 1988, art. 226, § 8º.</a><small>Dispositivo utilizado no editorial.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 11.340/2006. Lei Maria da Penha.</a><small>Texto consolidado; consultar também as alterações de 2025 e 2026.</small></li><li><a href="https://www.institutomariadapenha.org.br/quem-e-maria-da-penha.html" target="_blank" rel="noopener noreferrer">INSTITUTO MARIA DA PENHA. Quem é Maria da Penha.</a><small>Biografia, dupla tentativa de feminicídio em 1983 e trajetória por justiça.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13104.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 13.104/2015. Qualificadora de feminicídio.</a><small>Marco histórico de 2015.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14164.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 14.164/2021. Prevenção da violência na educação básica.</a><small>Conteúdo transversal e Semana Escolar de Combate à Violência contra a Mulher.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14717.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 14.717/2023. Pensão especial por feminicídio.</a><small>Requisitos de idade, renda e requerimento no art. 1º.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14994.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 14.994/2024. Feminicídio como crime autônomo.</a><small>Consultar o art. 121-A do Código Penal vigente.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15125.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 15.125/2025. Monitoramento eletrônico.</a><small>Alteração histórica de 2025, posteriormente atualizada em 2026.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15383.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 15.383/2026. Monitoramento e proteção.</a><small>Medida protetiva autônoma, critérios de prioridade e alertas.</small></li></ul></section><section class="reference-group-page"><h3>Dados e pesquisas</h3><ul class="reference-list-column"><li><a href="https://bibliotecadigital.cnj.jus.br/jspui/handle/123456789/1112" target="_blank" rel="noopener noreferrer">CNJ; PNUD. Guia interinstitucional de avaliação de risco para aplicação do FONAR. 2025.</a><small>Página 31: fragmentação da rede, indicadores e monitoramento contínuo.</small></li><li><a href="https://forumseguranca.org.br/wp-content/uploads/2026/03/nota-tecnica-dia-mulher-2026.pdf" target="_blank" rel="noopener noreferrer">FBSP. Retrato dos feminicídios no Brasil. 2026.</a><small>Quadro 1, p. 7; Quadro 2, p. 10; gráficos 4–8, p. 24–26. A série anual chega a 2025; o perfil tem recorte 2021–2024.</small></li><li><a href="https://forumseguranca.org.br/wp-content/uploads/2025/07/anuario-2025.pdf" target="_blank" rel="noopener noreferrer">FBSP. Anuário Brasileiro de Segurança Pública. 2025.</a><small>Registros de descumprimento de medidas protetivas: p. 143 e 167.</small></li><li><a href="https://forumseguranca.org.br/wp-content/uploads/2025/03/relatorio-visivel-e-invisivel-5ed-2025.pdf?v=13-03" target="_blank" rel="noopener noreferrer">FBSP; DATAFOLHA. Visível e Invisível. 5. ed., 2025.</a><small>Metodologia, p. 10; controle coercitivo ao longo da vida, gráfico 5, p. 22.</small></li><li><a href="https://anuario.ibge.gov.br/images/aeb/2024/s2/2_pdf/s2t1401.pdf" target="_blank" rel="noopener noreferrer">IBGE. Censo Demográfico 2022. População por sexo e cor ou raça.</a><small>Tabela 2.1.4.1 do Anuário Estatístico 2024. Cálculo da equipe: (10.130.438 + 46.883.709) ÷ 104.548.325 = 54,5% da população feminina. Comparação descritiva com outro período, sem ajuste etário.</small></li><li><a href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dados-nacionais-de-seguranca-publica-mapa/mapa-da-seguranca-publica-2026.pdf/view" target="_blank" rel="noopener noreferrer">MJSP. Mapa da Segurança Pública 2026. Dados de 2025.</a><small>Páginas 47–52; extração da base em 25/02/2026.</small></li><li><a href="https://www.unodc.org/documents/data-and-analysis/briefs/Femicide_Brief_2025.pdf" target="_blank" rel="noopener noreferrer">UNODC; ONU MULHERES. Femicides in 2024: global estimates. 2025.</a><small>Estimativas globais de mortes intencionais e de mortes por parceiros ou familiares em 2024.</small></li></ul></section><section class="reference-group-page"><h3>Teoria e entrevistas</h3><ul class="reference-list-column"><li><a href="https://www.geledes.org.br/enegrecer-o-feminismo-situacao-da-mulher-negra-na-america-latina-partir-de-uma-perspectiva-de-genero/" target="_blank" rel="noopener noreferrer">CARNEIRO, Sueli. Enegrecer o feminismo.</a><small>Texto da autora disponibilizado pelo Geledés em 2011; versão consultada sobre gênero e racismo.</small></li><li><a href="https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/" target="_blank" rel="noopener noreferrer">CRENSHAW, Kimberlé. Demarginalizing the Intersection of Race and Sex. 1989.</a><small>University of Chicago Legal Forum, artigo 8, p. 139–167.</small></li><li><a href="https://www.bds.unb.br/handle/123456789/1141" target="_blank" rel="noopener noreferrer">GONZALEZ, Lélia. Racismo e sexismo na cultura brasileira. 1984.</a><small>Ciências Sociais Hoje, p. 223–244.</small></li><li><a href="https://repositorio.ciem.ucr.ac.cr/items/a0bae345-91ec-40e4-96a4-855ec4dcb861" target="_blank" rel="noopener noreferrer">LAGARDE, Marcela. Del femicidio al feminicidio. 2006.</a><small>Desde el jardín de Freud, n. 6, p. 216–225.</small></li><li><a href="https://www.dianarussell.com/books.html" target="_blank" rel="noopener noreferrer">RADFORD, Jill; RUSSELL, Diana (org.). Femicide: The Politics of Woman Killing. 1992.</a><small>New York: Twayne. Registro bibliográfico no site da autora.</small></li><li><a href="https://www.dianarussell.com/origin_of_femicide.html" target="_blank" rel="noopener noreferrer">RUSSELL, Diana. The Origin and Importance of the Term Femicide. 2011.</a><small>Relato da autora sobre o uso público do termo em Bruxelas, em 1976.</small></li><li><a href="https://loja.editora.unb.br/sociologia/genero-patriarcado-violencia-1747/p" target="_blank" rel="noopener noreferrer">SAFFIOTI, Heleieth. Gênero, patriarcado, violência. 2. ed., 2015.</a><small>São Paulo: Expressão Popular. Ficha no catálogo da Editora UnB.</small></li><li><a href="https://coordinaciongenero.unam.mx/2023/04/universidades-fundamentales-para-eliminar-la-violencia-contra-mujeres/" target="_blank" rel="noopener noreferrer">UNAM. Universidades e enfrentamento à violência contra mulheres. 2023.</a><small>Atuação de Lagarde na elaboração e promoção da lei mexicana de 2007.</small></li><li><a href="https://www.dailymotion.com/video/xbjhsvi" target="_blank" rel="noopener noreferrer">TERRA. Declaração de Eduarda Campopiano. 7 out. 2026.</a><small>Vídeo sobre parlamentares eleitos; trecho em 03:21. Fonte de reprodução do excerto, não gravação integral da participação original.</small></li><li><a href="https://www1.folha.uol.com.br/poder/2026/10/a-guerra-ta-so-comecando-diz-deputada-mais-votada-de-sp.shtml" target="_blank" rel="noopener noreferrer">FOLHA DE S.PAULO. Entrevista com Eduarda Campopiano. Out. 2026.</a><small>SÁ, Bárbara. “A guerra tá só começando”, diz deputada mais votada de SP. Fonte do argumento sobre a classificação dos crimes; a fala literal destacada usa a reprodução do Terra.</small></li><li><a href="#pagina-08">GRUPO TECH. Entrevistas com R. Santos e C. Domingues. Out. 2026.</a><small>Pesquisa qualitativa exploratória com dois profissionais da segurança pública de São Paulo. Resumos fornecidos pela equipe; não representam uma amostra estatística.</small></li></ul></section></div></div><nav data-node-id="479:570" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;cursor:pointer;height:44px;left:670px;top:950px;width:100px">
+          <div data-node-id="404:391" data-name="27 — Referências" class="sheet" style="background-color:var(--cream, #FDF5EE);position:relative;width:1440px;height:1024px"><div class="references-spread reference-sheet"><h2>Fontes e referências</h2><p class="reference-deck">Dados, legislação, discussão sociológica e entrevistas. Consulta em 24 de outubro de 2026.</p><div class="reference-columns-page"><section class="reference-group-page"><h3>Legislação e proteção</h3><ul class="reference-list-column"><li><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" rel="noopener noreferrer">BRASIL. Constituição Federal de 1988, art. 226, § 8º.</a><small>Dispositivo utilizado no editorial.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 11.340/2006. Lei Maria da Penha.</a><small>Texto consolidado; consultar também as alterações de 2025 e 2026.</small></li><li><a href="https://www.institutomariadapenha.org.br/quem-e-maria-da-penha.html" target="_blank" rel="noopener noreferrer">INSTITUTO MARIA DA PENHA. Quem é Maria da Penha.</a><small>Biografia, dupla tentativa de feminicídio em 1983 e trajetória por justiça.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13104.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 13.104/2015. Qualificadora de feminicídio.</a><small>Marco histórico de 2015.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14164.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 14.164/2021. Prevenção da violência na educação básica.</a><small>Conteúdo transversal e Semana Escolar de Combate à Violência contra a Mulher.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14717.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 14.717/2023. Pensão especial por feminicídio.</a><small>Requisitos de idade, renda e requerimento no art. 1º.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14994.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 14.994/2024. Feminicídio como crime autônomo.</a><small>Consultar o art. 121-A do Código Penal vigente.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15125.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 15.125/2025. Monitoramento eletrônico.</a><small>Alteração histórica de 2025, posteriormente atualizada em 2026.</small></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15383.htm" target="_blank" rel="noopener noreferrer">BRASIL. Lei 15.383/2026. Monitoramento e proteção.</a><small>Medida protetiva autônoma, critérios de prioridade e alertas.</small></li></ul></section><section class="reference-group-page"><h3>Dados e pesquisas</h3><ul class="reference-list-column"><li><a href="https://bibliotecadigital.cnj.jus.br/jspui/handle/123456789/1112" target="_blank" rel="noopener noreferrer">CNJ; PNUD. Guia interinstitucional de avaliação de risco para aplicação do FONAR. 2025.</a><small>Página 31: fragmentação da rede, indicadores e monitoramento contínuo.</small></li><li><a href="https://forumseguranca.org.br/wp-content/uploads/2026/03/nota-tecnica-dia-mulher-2026.pdf" target="_blank" rel="noopener noreferrer">FBSP. Retrato dos feminicídios no Brasil. 2026.</a><small>Quadro 1, p. 7; Quadro 2, p. 10; gráficos 4–8, p. 24–26. A série anual chega a 2025; o perfil tem recorte 2021–2024.</small></li><li><a href="https://forumseguranca.org.br/wp-content/uploads/2025/07/anuario-2025.pdf" target="_blank" rel="noopener noreferrer">FBSP. Anuário Brasileiro de Segurança Pública. 2025.</a><small>Registros de descumprimento de medidas protetivas: p. 143 e 167.</small></li><li><a href="https://forumseguranca.org.br/wp-content/uploads/2025/03/relatorio-visivel-e-invisivel-5ed-2025.pdf?v=13-03" target="_blank" rel="noopener noreferrer">FBSP; DATAFOLHA. Visível e Invisível. 5. ed., 2025.</a><small>Metodologia, p. 10; controle coercitivo ao longo da vida, gráfico 5, p. 22.</small></li><li><a href="https://anuario.ibge.gov.br/images/aeb/2024/s2/2_pdf/s2t1401.pdf" target="_blank" rel="noopener noreferrer">IBGE. Censo Demográfico 2022. População por sexo e cor ou raça.</a><small>Tabela 2.1.4.1 do Anuário Estatístico 2024. Cálculo da equipe: (10.130.438 + 46.883.709) ÷ 104.548.325 = 54,5% da população feminina. Comparação descritiva com outro período, sem ajuste etário.</small></li><li><a href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/download/dados-nacionais-de-seguranca-publica-mapa/mapa-da-seguranca-publica-2026.pdf/view" target="_blank" rel="noopener noreferrer">MJSP. Mapa da Segurança Pública 2026. Dados de 2025.</a><small>Páginas 47–52; extração da base em 25/02/2026.</small></li><li><a href="https://www.unodc.org/documents/data-and-analysis/briefs/Femicide_Brief_2025.pdf" target="_blank" rel="noopener noreferrer">UNODC; ONU MULHERES. Femicides in 2024: global estimates. 2025.</a><small>Estimativas globais de mortes intencionais e de mortes por parceiros ou familiares em 2024.</small></li></ul></section><section class="reference-group-page"><h3>Teoria e entrevistas</h3><ul class="reference-list-column"><li><a href="https://www.geledes.org.br/enegrecer-o-feminismo-situacao-da-mulher-negra-na-america-latina-partir-de-uma-perspectiva-de-genero/" target="_blank" rel="noopener noreferrer">CARNEIRO, Sueli. Enegrecer o feminismo.</a><small>Texto da autora disponibilizado pelo Geledés em 2011; versão consultada sobre gênero e racismo.</small></li><li><a href="https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/" target="_blank" rel="noopener noreferrer">CRENSHAW, Kimberlé. Demarginalizing the Intersection of Race and Sex. 1989.</a><small>University of Chicago Legal Forum, artigo 8, p. 139–167.</small></li><li><a href="https://www.bds.unb.br/handle/123456789/1141" target="_blank" rel="noopener noreferrer">GONZALEZ, Lélia. Racismo e sexismo na cultura brasileira. 1984.</a><small>Ciências Sociais Hoje, p. 223–244.</small></li><li><a href="https://repositorio.ciem.ucr.ac.cr/items/a0bae345-91ec-40e4-96a4-855ec4dcb861" target="_blank" rel="noopener noreferrer">LAGARDE, Marcela. Del femicidio al feminicidio. 2006.</a><small>Desde el jardín de Freud, n. 6, p. 216–225.</small></li><li><a href="https://www.dianarussell.com/books.html" target="_blank" rel="noopener noreferrer">RADFORD, Jill; RUSSELL, Diana (org.). Femicide: The Politics of Woman Killing. 1992.</a><small>New York: Twayne. Registro bibliográfico no site da autora.</small></li><li><a href="https://www.dianarussell.com/origin_of_femicide.html" target="_blank" rel="noopener noreferrer">RUSSELL, Diana. The Origin and Importance of the Term Femicide. 2011.</a><small>Relato da autora sobre o uso público do termo em Bruxelas, em 1976.</small></li><li><a href="https://loja.editora.unb.br/sociologia/genero-patriarcado-violencia-1747/p" target="_blank" rel="noopener noreferrer">SAFFIOTI, Heleieth. Gênero, patriarcado, violência. 2. ed., 2015.</a><small>São Paulo: Expressão Popular. Ficha no catálogo da Editora UnB.</small></li><li><a href="https://coordinaciongenero.unam.mx/2023/04/universidades-fundamentales-para-eliminar-la-violencia-contra-mujeres/" target="_blank" rel="noopener noreferrer">UNAM. Universidades e enfrentamento à violência contra mulheres. 2023.</a><small>Atuação de Lagarde na elaboração e promoção da lei mexicana de 2007.</small></li><li><a href="https://www.dailymotion.com/video/xbjhsvi" target="_blank" rel="noopener noreferrer">TERRA. Declaração de Eduarda Campopiano. 7 out. 2026.</a><small>Vídeo sobre parlamentares eleitos; trecho em 03:21. Fonte de reprodução do excerto, não gravação integral da participação original.</small></li><li><a href="https://www1.folha.uol.com.br/poder/2026/10/a-guerra-ta-so-comecando-diz-deputada-mais-votada-de-sp.shtml" target="_blank" rel="noopener noreferrer">FOLHA DE S.PAULO. Entrevista com Eduarda Campopiano. Out. 2026.</a><small>SÁ, Bárbara. “A guerra tá só começando”, diz deputada mais votada de SP. Fonte do argumento sobre a classificação dos crimes; a fala literal destacada usa a reprodução do Terra.</small></li><li><a href="#pagina-08">GRUPO TECH. Entrevistas com R. Santos e C. Domingues. Out. 2026.</a><small>Pesquisa qualitativa exploratória com dois profissionais da segurança pública de São Paulo. Resumos fornecidos pela equipe; não representam uma amostra estatística.</small></li></ul></section></div></div><nav data-node-id="479:570" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; cursor: pointer; height: 44px; left: 670px; top: 946px; width: 100px;">
               <button data-node-id="479:571" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-27" style="
                   position: absolute;
                   display: block;
@@ -7567,7 +7594,7 @@ body:has(dialog[open]){overflow:hidden}
                   " data-media="media/eb6c28ad2dd455e6.png">
               </div>
             </div>
-            <nav data-node-id="479:581" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position:absolute;height:44px;left:670px;top:950px;width:100px">
+            <nav data-node-id="479:581" data-name="Navegação entre páginas" aria-label="Navegação da revista" style="position: absolute; height: 44px; left: 670px; top: 946px; width: 100px;">
               <button data-node-id="479:582" data-name="Página anterior" type="button" aria-label="Página anterior" data-page-target="pagina-28" style="
                   position: absolute;
                   display: block;
